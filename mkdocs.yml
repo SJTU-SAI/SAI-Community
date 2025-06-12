@@ -7,7 +7,6 @@ site_url: https://xiyuanyang-code.github.io/SAI-Community
 repo_name: SAI Community
 repo_url: https://github.com/xiyuanyang-code/SAI-Community
 # ! temporarily!!!
-# !todo repo_url: tobe done
 
 theme:
   name: material
@@ -95,8 +94,14 @@ nav:
   - Hello World: "index.md"
   - About: "about.md"
   - Courses:
-      - Semester 1.1:
-          - 总结: "courses/Semester1.1/index.md"
+    - Semester 1.1:
+      - 人工智能导论: "courses/Semester1.1/SJTU-AI1801.md"
+      - 线性代数: "courses/Semester1.1/SJTU-MATH1205H.md"
+      - 数学分析I: "courses/Semester1.1/SJTU-MATH1607H.md"
+      - 程序设计基础: "courses/Semester1.1/SJTU-AI1802.md"
+    - Semester 1.2: "404"
+    - Semester 2.1: "404"
+    
   - Contributions:
       - Contributions: "contributions/contributions.md"
       - Contributors: "contributions/contributors.md"
