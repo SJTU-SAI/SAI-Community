@@ -73,6 +73,15 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # extra:
 #   social:
@@ -86,16 +95,18 @@ nav:
   - Hello World: "index.md"
   - About: "about.md"
   - Courses:
-      - Semester 1.1: 
+      - Semester 1.1:
           - 总结: "courses/Semester1.1/index.md"
           - 线性代数: "courses/Semester1.1/线性代数.md"
-  - Contributions: 
+  - Contributions:
       - README: "contributions/contributions.md"
       - Contributors: "contributions/contributors.md"
       - Pull Requests: "contributions/PR.md"
       - Template Markdown: "templates/template_markdown.md"
-
+  - test:
+      - template test: "templates/template.md"
 
 exclude_docs: |
   !.*
   !templates
+
