@@ -1,6 +1,3 @@
-<!-- !所有这样的标识都是注释，非必要请不要删除!!!（涉及代码的识别问题） -->
-
-<!-- 课程名称 & 课程代码 -->
 # SJTU-AI1001: 一门不存在的AI课程
 
 <!-- 课程的基本信息简介 -->
@@ -8,6 +5,7 @@
 ## 课程基本信息简介
 
 <!-- 下面一行请勿删除，注意缩进 -->
+<!-- markdown 格式详见: https://squidfunk.github.io/mkdocs-material/reference/admonitions/ -->
 !!! info "Basic information"
 
     :fontawesome-solid-bolt:{ .lightning } 课程教师：DeepSeek老师
@@ -16,35 +14,22 @@
 
     :fontawesome-solid-bolt:{ .lightning } 学时&学分：150学时 & 1学分
 
-    :fontawesome-solid-bolt:{ .lightning } 考核方式：
-
-    - 一篇人工智能综述小论文（50%）
-
-    - 出勤 & 平时作业（20%）
-
-    - 小测（30%）
+    :fontawesome-solid-bolt:{ .lightning } 考核方式
 
 
-<!--  你可以在这里自由添加内容，包括对课程信息的客观描述，例如参考教材，授课方式等等，当然，你也可以把这部分写在课程评价中，如果这部分暂无信息，请删掉"### 其他信息"这个Header。-->
+<!-- You are free to add some contents in it! -->
 ### 其他信息
 
-(Optional)
+(暂无)
 
 
-<!-- !这一部分请不要修改，请使用src中的代码自动提交或者修改 -->
+<!-- 对课程的主观性评价请放在这里，包括对学弟学妹的建议等等 -->
+<!-- markdown 格式详见: https://squidfunk.github.io/mkdocs-material/reference/admonitions/ -->
 ## 课程评价
 
-<!-- NOTE BEGIN EVALUATION -->
-
-<!-- NOTE ITERATION1 BEGIN -->
-
-!!! note "From Xiyuan Yang"
+!!! note "From somebody"
     Some comments here.
 
-<!-- NOTE ITERATION1 END -->
-
-
-<!-- NOTE END EVALUATION -->
 
 
 ## 课程资源
