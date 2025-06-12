@@ -1,0 +1,98 @@
+site_name: SAI Community
+site_author: SAI
+site_description: >-
+  SAI Community
+
+# !todo repo_name: tobe done
+# !todo repo_url: tobe done
+
+theme:
+  name: material
+  language: zh
+  # !todo logo: tobe done
+  static_templates:
+    - 404.html
+  # !todo favicon: tobe done
+  include_search_page: true
+  palette:
+    scheme: sai
+    primary: teal
+    accent: teal
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  features:
+    - header.autohide
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.annotate
+
+  font:
+    text: Roboto Slab
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+extra_css:
+  - stylesheets/extra.css
+  # - stylesheets/colors.scss
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums_style: pymdownx-inline
+      linenums: true
+      auto_title: true
+      line_spans: __span
+      pygments_lang_class: true
+  - attr_list
+  - md_in_html
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+# extra:
+#   social:
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/pkuflyingpig/cs-self-learning/
+#   analytics:
+#     provider: google
+#     property: G-KJB4RXSKZG
+
+nav:
+  - Hello World: "index.md"
+  - About: "about.md"
+  - Courses:
+      - Semester 1.1: 
+          - 总结: "courses/Semester1.1/index.md"
+          - 线性代数: "courses/Semester1.1/线性代数.md"
+  - Contributions: 
+      - README: "contributions/contributions.md"
+      - Contributors: "contributions/contributors.md"
+      - Pull Requests: "contributions/PR.md"
+      - Template Markdown: "templates/template_markdown.md"
+
+
+exclude_docs: |
+  !.*
+  !templates
