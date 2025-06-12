@@ -2,8 +2,8 @@
 
 Initial Build for SAI community.
 
-! Just for the initial version
-! Still discussing
+> [!IMPORTANT]
+> Not having been released yet!
 
 ## Tobe done in the future:
 
