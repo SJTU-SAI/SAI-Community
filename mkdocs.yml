@@ -3,7 +3,10 @@ site_author: SAI
 site_description: >-
   SAI Community
 
-# !todo repo_name: tobe done
+site_url: https://xiyuanyang-code.github.io/SAI-Community
+repo_name: cs-self-learning
+repo_url: https://github.com/xiyuanyang-code/SAI-Community
+# ! temporarily!!!
 # !todo repo_url: tobe done
 
 theme:

@@ -2,6 +2,9 @@
 
 Initial Build for SAI community.
 
+! Just for the initial version
+! Still discussing
+
 ### Tobe Done
 
 - 添加笔记等较大文件的存储 (Git LFS)
