@@ -5,17 +5,13 @@ Initial Build for SAI community.
 ! Just for the initial version
 ! Still discussing
 
-### Tobe Done
+## Tobe done in the future:
 
-- 添加笔记等较大文件的存储 (Git LFS)
-    - 讨论是否需要用交大云盘
+- [ ] Welcome collaborators
 
-- 具体页面如何规划安排？如何提升社区氛围？
+- [ ] Add giscus for comments
 
-- 加入giscus等评论系统
+- [ ] Add comments for semester1.1
 
-- 要到官方账户，建好邮箱，搞好repo设定和github workflow
-
-预计在7月中旬之前完成这部分内容：
-    **之后专注在内容的写作上**
+- [ ] Change this repo to the official account
 
