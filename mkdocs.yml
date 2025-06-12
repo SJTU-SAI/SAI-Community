@@ -97,14 +97,10 @@ nav:
   - Courses:
       - Semester 1.1:
           - 总结: "courses/Semester1.1/index.md"
-          - 线性代数: "courses/Semester1.1/线性代数.md"
   - Contributions:
-      - README: "contributions/contributions.md"
+      - Contributions: "contributions/contributions.md"
       - Contributors: "contributions/contributors.md"
-      - Pull Requests: "contributions/PR.md"
-      - Template Markdown: "templates/template_markdown.md"
-  - test:
-      - template test: "templates/template.md"
+      - Markdown Usage: "contributions/markdown_tutorial.md"
 
 exclude_docs: |
   !.*
