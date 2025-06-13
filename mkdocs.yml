@@ -39,6 +39,7 @@ theme:
     repo: fontawesome/brands/github
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
+    annotation: material/arrow-right-circle 
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
@@ -52,9 +53,14 @@ theme:
       bug: fontawesome/solid/robot
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
+
 extra_css:
   - stylesheets/extra.css
   # - stylesheets/colors.scss
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -69,7 +75,11 @@ markdown_extensions:
   - footnotes
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.critic
@@ -81,7 +91,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  
 # extra:
 #   social:
 #     - icon: fontawesome/brands/github
@@ -99,13 +113,19 @@ nav:
       - 线性代数: "courses/Semester1.1/SJTU-MATH1205H.md"
       - 数学分析I: "courses/Semester1.1/SJTU-MATH1607H.md"
       - 程序设计基础: "courses/Semester1.1/SJTU-AI1802.md"
-    - Semester 1.2: "404"
-    - Semester 2.1: "404"
+    # - Semester 1.2: "404"
+    # - Semester 2.1: "404"
     
   - Contributions:
       - Contributions: "contributions/contributions.md"
       - Contributors: "contributions/contributors.md"
-      - Markdown Usage: "contributions/markdown_tutorial.md"
+      - Tutorials:
+        - Advanced Markdown: "contributions/markdown_tutorial.md"
+        - Local Launch: "contributions/local_run.md"
+        - Demo: "templates/template.md"
+
+plugins:
+  - glightbox
 
 exclude_docs: |
   !.*
