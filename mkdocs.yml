@@ -96,14 +96,6 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   
-# extra:
-#   social:
-#     - icon: fontawesome/brands/github
-#       link: https://github.com/pkuflyingpig/cs-self-learning/
-#   analytics:
-#     provider: google
-#     property: G-KJB4RXSKZG
-
 nav:
   - Hello World: "index.md"
   - About: "about.md"
@@ -113,9 +105,13 @@ nav:
       - 线性代数: "courses/Semester1.1/SJTU-MATH1205H.md"
       - 数学分析I: "courses/Semester1.1/SJTU-MATH1607H.md"
       - 程序设计基础: "courses/Semester1.1/SJTU-AI1802.md"
-    # - Semester 1.2: "404"
-    # - Semester 2.1: "404"
-    
+    - Semester 1.2: 
+      - 数学分析II: "courses/Semester1.2/SJTU-MATH1608H.md"
+      - 大学物理I: "courses/Semester1.2/SJTU-PHY1251H.md"
+      - 基础物理实验I: "courses/Semester1.2/SJTU-PHY1223H.md"    
+      - 数据结构: "courses/Semester1.2/SJTU-CS0501H.md"
+      - 离散数学: "courses/Semester1.2/SJTU-CS2501H.md"
+      - 编程综合实践: "courses/Semester1.2/SJTU-AI1803.md"
   - Contributions:
       - Contributions: "contributions/contributions.md"
       - Contributors: "contributions/contributors.md"
