@@ -219,6 +219,7 @@ def bubble_sort(items):
         }
         ```
 
+## Mermaid 流程图
 
 ``` mermaid
 graph LR
