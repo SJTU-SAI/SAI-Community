@@ -113,7 +113,7 @@ nav:
       - 离散数学: "courses/Semester1.2/SJTU-CS2501H.md"
       - 编程综合实践: "courses/Semester1.2/SJTU-AI1803.md"
   - Contributions:
-      - Contributions: "contributions/contributions.md"
+      - Contributions: "contributions/hello_world.md"
       - Contributors: "contributions/contributors.md"
       - Tutorials:
         - Advanced Markdown: "contributions/markdown_tutorial.md"
