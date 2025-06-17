@@ -8,6 +8,7 @@ repo_name: SAI Community
 repo_url: https://github.com/SJTU-SAI/SAI-Community
 
 theme:
+  custom_dir: overrides
   name: material
   language: zh
   # !todo logo: tobe done
