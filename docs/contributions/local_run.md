@@ -11,10 +11,9 @@
 - 克隆本仓库
 
 ```bash
-git clone https://github.com/xiyuanyang-code/SAI-Community.git
+git clone https://github.com/SJTU-SAI/SAI-Community.git
 cd SAI-Community
 ```
-<!-- todo change web url -->
 
 - 安装依赖
 
