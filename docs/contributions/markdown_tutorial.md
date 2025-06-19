@@ -2,7 +2,7 @@
 
 Here are some advanced usage in markdown specifically in Mkdocs[^1]. Below are some demonstrations.
 
-> A simple demo 的部分是上文markdown代码的实际展示。
+> A simple demo 的部分是上文 markdown 代码的实际展示。
 
 更多设置请参考官方文档：[Official Docs](https://squidfunk.github.io/mkdocs-material/reference/)
 
@@ -15,62 +15,62 @@ Here are some advanced usage in markdown specifically in Mkdocs[^1]. Below are s
 ```markdown
 !!! Note "A simple demo"
     ??? note "this is a note"
-        This is a note
+        This is a note.
     ??? abstract "this is an abstract"
-        This is an abstract
+        This is an abstract.
     ??? info "this is an info"
-        This is an info
+        This is an info.
     ??? tip "this is a tip"
-        This is a tip
+        This is a tip.
     ??? success "this is a success"
-        This is a success
+        This is a success.
     ??? question "this is a question"
-        This is a question
+        This is a question.
     ??? warning "this is a warning"
-        This is a warning
+        This is a warning.
     ??? failure "this is a failure"
-        This is a failure
+        This is a failure.
     ??? danger "this is a danger"
-        This is a danger
+        This is a danger.
     ??? bug "this is a bug"
-        This is a bug
+        This is a bug.
     ??? example "this is an example"
-        This is an example
+        This is an example.
     ??? quote "this is a quote"
-        This is a quote
+        This is a quote.
 ```
 
 !!! Note "Here are all the admonitions"
     ??? note "this is a note"
-        This is a note
+        This is a note.
     ??? abstract "this is an abstract"
-        This is an abstract
+        This is an abstract.
     ??? info "this is an info"
-        This is an info
+        This is an info.
     ??? tip "this is a tip"
-        This is a tip
+        This is a tip.
     ??? success "this is a success"
-        This is a success
+        This is a success.
     ??? question "this is a question"
-        This is a question
+        This is a question.
     ??? warning "this is a warning"
-        This is a warning
+        This is a warning.
     ??? failure "this is a failure"
-        This is a failure
+        This is a failure.
     ??? danger "this is a danger"
-        This is a danger
+        This is a danger.
     ??? bug "this is a bug"
-        This is a bug
+        This is a bug.
     ??? example "this is an example"
-        This is an example
+        This is an example.
     ??? quote "this is a quote"
-        This is a quote
+        This is a quote.
 
 具体使用方法详见：[Admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)[^3]
 
 ## Fonts
 
-对于有颜色的字体，可以使用HTML块包裹：
+对于有颜色的字体，可以使用 HTML 块包裹：
 ```html
 <!-- 不同大小和颜色的字体 -->
 <span style="font-size:24px; color:#015c43;font-family: 'Microsoft YaHei', '微软雅黑', sans-serif; font-weight: bold;">大号深绿色字体</span>
@@ -121,21 +121,21 @@ Here are some advanced usage in markdown specifically in Mkdocs[^1]. Below are s
 ## 可视注释
 
 ```markdown
-你好，这里是SAI，(1) 我是SAI的一名本科生。{ .annotate }
+你好，这里是 SAI，(1) 我是 SAI 的一名本科生。{ .annotate }
 
 1. :smile: Wow, it is SAIer!
 ```
 
 ??? example "A simple demo"
 
-    你好，这里是SAI, (1) 我是SAI的一名本科生。
+    你好，这里是 SAI, (1) 我是 SAI 的一名本科生。
     { .annotate }
 
     1.  :smile: Wow, it is SAIer!
 
 > 注意空格和使用英文括号。
 
-你也可以在代码的注释中添加annotations！
+你也可以在代码的注释中添加 annotations！
 
 ```py title="bubble_sort.py"
 def bubble_sort(items):
@@ -319,7 +319,7 @@ graph LR
 
 ## 符号和表情
 
-本站支持**FontAwesome**[^4]，一款广受欢迎的免费开源图标库，提供超过 2,000+ 个可缩放矢量图标。
+本站支持 **FontAwesome**[^4]，一款广受欢迎的免费开源图标库，提供超过 2,000+ 个可缩放矢量图标。
 
 ```markdown
 :smile:
@@ -329,14 +329,14 @@ graph LR
 :smile:
 :fontawesome-solid-file-zipper:{ .saic }
 
-如果需要添加新的css，请发起PR。
+如果需要添加新的 css，请发起PR。
 
 ## 数学公式
 
 环境配置完成，可正常使用。
 
 $$
-\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
+\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k},\quad x\in\mathbb R.
 $$
 
 ## markdown 书写排版规范

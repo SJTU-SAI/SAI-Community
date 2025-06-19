@@ -35,7 +35,7 @@ title: Welcome Contributors
 
 !!! info "MIT LICENSE"
 
-    社区秉持着开放而包容的 [MIT开源精神](https://opensource.org/license/mit)，鼓励任何内容和任何形式的贡献，但**请务必保证真实准确可靠的信息来源**。
+    社区秉持着开放而包容的 [MIT 开源精神](https://opensource.org/license/mit)，鼓励任何内容和任何形式的贡献，但**请务必保证真实准确可靠的信息来源**。
 
     Sharing Drives Innovations!
 
@@ -49,7 +49,7 @@ PR教程指路: [Pull Requests](https://docs.github.com/en/pull-requests)
 
 - 如果你希望上传你的课程材料，请参考[**上传课程材料**](#_4)。
 
-为了保证页面的整洁和一致性，我们欢迎各位在书写markdown文件的时候使Mkdocs支持的一些高级Markdown语法：
+为了保证页面的整洁和一致性，我们欢迎各位在书写 markdown 文件的时候使 MkDocs 支持的一些高级 markdown 语法：
 
 - [官方文档指南](https://squidfunk.github.io/mkdocs-material/reference/)
 
@@ -58,15 +58,15 @@ PR教程指路: [Pull Requests](https://docs.github.com/en/pull-requests)
 
 
 !!! Danger 
-    在完成相对应的修改后，请在**本地运行网站确认无误后再提交PR**。本地运行需要进行一些环境配置，详见 [本地网页运行和环境配置](local_run.md)。
+    在完成相对应的修改后，请在**本地运行网站确认无误后再提交 PR**。本地运行需要进行一些环境配置，详见 [本地网页运行和环境配置](local_run.md)。
 
 ### 添加新页面
 
 如果你希望添加新页面，请完成以下修改：
 
-- 在`template`的markdown文件作为模版，创建一个新的markdown文件，放在对应的文件夹中。
+- 在 `template` 的 markdown 文件作为模版，创建一个新的 markdown 文件，放在对应的文件夹中。
 
-- 在仓库的`mkdocs.yml`文件中添加对应的文件索引。
+- 在仓库的 `mkdocs.yml` 文件中添加对应的文件索引。
 
 ??? example "A simple demo"
     ```yaml
@@ -103,19 +103,19 @@ PR教程指路: [Pull Requests](https://docs.github.com/en/pull-requests)
         - Template: "templates/template.md"
     ```
 
-- 提交Pull Requests。
+- 提交 Pull Requests。
 
 ### 上传学习资料
 
-推荐使用`PDF`或者`.zip`的形式，上传到自己的交大云盘（或者其他云存储服务），生成分享链接，并将下载链接添加到对应markdown文件末尾**课程资料**的表格中，提交Pull Requests。
+推荐使用 `PDF` 或者 `.zip` 的形式，上传到自己的交大云盘（或者其他云存储服务），生成分享链接，并将下载链接添加到对应 markdown 文件末尾**课程资料**的表格中，提交 Pull Requests。
 
 > 你不需要把文件整个提交到本仓库中，只需要提交文件的下载链接或者其他跳转链接即可。
 
-Demo请跳转至[A simple demo](../templates/template.md/#_4)
+Demo请跳转至 [A simple demo](../templates/template.md/#_4)。
 
 ### 添加点评 & 学习心得分享
 
-直接修改对应的markdown文件后提交Pull Requests即可。为了保证可读性，我们建议**各位点评时使用Admonitions的高亮块包裹**，这样既分割了不同的评论，也可以通过不同颜色的选择的选择表达自己对这门课的态度。
+直接修改对应的 markdown 文件后提交 Pull Requests 即可。为了保证可读性，我们建议**各位点评时使用 Admonitions 的高亮块包裹**，这样既分割了不同的评论，也可以通过不同颜色的选择的选择表达自己对这门课的态度。
 
 我们认为一门课的评价应该是**多向度、因人而异的**，过于量化的评分结果只会适得其反造成判断失真。我们建议同学们在评价课程时**减少简单打分，多写具体感受**。数字评分容易掩盖课程的真正价值——同一门课可能让擅长理论的同学受益匪浅，却让偏好实践的同学无所适从。用文字描述你的真实学习体验：哪些内容让你豁然开朗？哪些环节有待改进？这样既能帮助老师优化教学，也能让其他同学根据自身特点做出更明智的选择。
 
@@ -129,35 +129,35 @@ Demo请跳转至[A simple demo](../templates/template.md/#_4)
     ??? danger "Student B (He/She chooses to hide his/her comments!)"
         分低事多，谁来谁后悔。
 
-官方教程: [如何使用Admonitions包裹markdown块](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
+官方教程: [如何使用 Admonitions 包裹 markdown 块](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
 
 我们提供了一份丐版的中文版教程，详见：[Tutorials for advanced markdown](markdown_tutorial.md/#admonitions)
 
 !!! Note "All admonitions are demonstrated here"
     ??? note "this is a note"
-        This is a note
+        This is a note.
     ??? abstract "this is an abstract"
-        This is an abstract
+        This is an abstract.
     ??? info "this is an info"
-        This is an info
+        This is an info.
     ??? tip "this is a tip"
-        This is a tip
+        This is a tip.
     ??? success "this is a success"
-        This is a success
+        This is a success.
     ??? question "this is a question"
-        This is a question
+        This is a question.
     ??? warning "this is a warning"
-        This is a warning
+        This is a warning.
     ??? failure "this is a failure"
-        This is a failure
+        This is a failure.
     ??? danger "this is a danger"
-        This is a danger
+        This is a danger.
     ??? bug "this is a bug"
-        This is a bug
+        This is a bug.
     ??? example "this is an example"
-        This is an example
+        This is an example.
     ??? quote "this is a quote"
-        This is a quote
+        This is a quote.
 
 ---
 
