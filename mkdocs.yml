@@ -39,7 +39,7 @@ theme:
     repo: fontawesome/brands/github
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
-    annotation: material/arrow-right-circle 
+    annotation: material/arrow-right-circle
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
@@ -95,7 +95,7 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.arithmatex:
       generic: true
-  
+
 nav:
   - Hello World: "index.md"
   - About: "about.md"
@@ -105,10 +105,10 @@ nav:
       - 线性代数: "courses/Semester1.1/SJTU-MATH1205H.md"
       - 数学分析I: "courses/Semester1.1/SJTU-MATH1607H.md"
       - 程序设计基础: "courses/Semester1.1/SJTU-AI1802.md"
-    - Semester 1.2: 
+    - Semester 1.2:
       - 数学分析II: "courses/Semester1.2/SJTU-MATH1608H.md"
       - 大学物理I: "courses/Semester1.2/SJTU-PHY1251H.md"
-      - 基础物理实验I: "courses/Semester1.2/SJTU-PHY1223H.md"    
+      - 基础物理实验I: "courses/Semester1.2/SJTU-PHY1223H.md"
       - 数据结构: "courses/Semester1.2/SJTU-CS0501H.md"
       - 离散数学: "courses/Semester1.2/SJTU-CS2501H.md"
       - 编程综合实践: "courses/Semester1.2/SJTU-AI1803.md"
@@ -119,6 +119,7 @@ nav:
         - Advanced Markdown: "contributions/markdown_tutorial.md"
         - Local Launch: "contributions/local_run.md"
         - Demo: "templates/template.md"
+        - Pull Request Tutorial: "contributions/Pull_Request_Tutorial.md"
 
 plugins:
   - glightbox
