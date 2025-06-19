@@ -18,12 +18,6 @@ title: Welcome Contributors
 
 * **在评论区发表你的简短想法和疑问**。 如果你对某个知识点有小小的见解，或者某个问题想寻求讨论，直接在相关的评论区留言就非常合适。
 
-!!! failure
-
-    评论系统很快会上线
-
-<!-- !todo Add giscus and github discussions -->
-
 
 * **通过 Pull Request (PR) 提交更正式、更详细的贡献**。 这包括：
     * **上传学习资料**：整理并分享你觉得有用的学习笔记、思维导图、参考资料等。
