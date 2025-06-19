@@ -68,6 +68,14 @@ Here are some advanced usage in markdown specifically in Mkdocs[^1]. Below are s
 
 具体使用方法详见：[Admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)[^3]
 
+!!! tip "关于 `Admonitions` 的缩进"
+    `Mkdocs` 的 `Admonitions` 功能对缩进有严格要求:
+
+    - `!!!` 这一行的内容要和你当前所在的内容缩进一致
+    - `!!!` 下面的内容要在它的基础上再向右缩进4个空格
+
+    对于 `!!!` 的嵌套使用，若编译出问题，请严格检查你的缩进
+
 ## Fonts
 
 对于有颜色的字体，可以使用 HTML 块包裹：
@@ -142,7 +150,7 @@ def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
             if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j] 
+                items[j], items[j + 1] = items[j + 1], items[j]
 # (1)
 ```
 
@@ -158,7 +166,7 @@ def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
             if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j] 
+                items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
 ??? example "a simple demo"
@@ -167,7 +175,7 @@ def bubble_sort(items):
         for i in range(len(items)):
             for j in range(len(items) - 1 - i):
                 if items[j] > items[j + 1]:
-                    items[j], items[j + 1] = items[j + 1], items[j] 
+                    items[j], items[j + 1] = items[j + 1], items[j]
     ```
 
 像 [OI-wiki](https://oi-wiki.org/) 一样，也可以整合多个代码块。
