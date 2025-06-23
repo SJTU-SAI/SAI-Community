@@ -1075,11 +1075,13 @@
 <p class="admonition-title">成功提交PR后的页面示例</p>
 <p><a class="glightbox" href="../../assets/images/PR-Success.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PR 成功页面" src="../../assets/images/PR-Success.png" /></a></p>
 </div>
+<p>这时候只要等待主管 merge 你的 PR 即可</p>
 </li>
 </ol>
 </div>
 </div>
 </div>
+<p>至此，一个完整的 Pull Request 工作流程结束。<img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:" /></p>
 <hr />
 <h3 id="pr_1">附录：PR 进阶操作</h3>
 <details class="question" open="open">
@@ -1131,33 +1133,30 @@
 </li>
 </ol>
 </details>
-<details class="success" open="open">
-<summary>Last Phase: PR 合并后的清理工作</summary>
-<p>PR 被合并后，为了保持仓库整洁，应该删除已完成使命的分支。</p>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Addition: 不删除本地Fork，继续发PR的方法</p>
+<p>可以用 <code>Github</code> 上的 <code>sync Fork</code>
+1. 去 <code>Github</code> 上你的 <code>fork</code> 页面，看到右边有个 <code>sync Fork</code> 按钮，点击 <code>Update Branch</code> 完成更新
+<a class="glightbox" href="../../assets/images/Fork-sync.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fork Sync" src="../../assets/images/Fork-sync.png" /></a>
+2. 在本地执行以下三条命令：
+<div class="language-Bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><a href="#__codelineno-9-1"><span class="linenos" data-linenos="1 "></span></a>git<span class="w"> </span>checkout<span class="w"> </span>master<span class="w"> </span><span class="c1">#查询主仓库更新</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><a href="#__codelineno-9-2"><span class="linenos" data-linenos="2 "></span></a>git<span class="w"> </span>pull<span class="w"> </span>upstream<span class="w"> </span>master<span class="w">  </span><span class="c1">#从上游官方仓库拉取更新</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><a href="#__codelineno-9-3"><span class="linenos" data-linenos="3 "></span></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master<span class="w">  </span><span class="c1">#将更新后的本地主分支推送到你的origin（你的Fork）</span>
+</span></code></pre></div>
+看到 <code>Everything up-to-date</code> 就表明你的分支仓库和官方进度同步了</p>
+<p><strong><mark>提醒：一定要确保你的本地Fork和官方进度同步再发起更新，不然版本冲突很麻烦</mark></strong></p>
 <ol>
-<li>
-<p><strong>删除远程分支</strong>
-    在 GitHub 上合并 PR 后，通常会有一个 "Delete branch" 的按钮，点击即可。</p>
-</li>
-<li>
-<p><strong>删除本地分支</strong>
-    <div class="language-bash highlight"><span class="filename">清理本地分支</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><a href="#__codelineno-9-1"><span class="linenos" data-linenos="1 "></span></a><span class="c1"># 1. 切换回主分支</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><a href="#__codelineno-9-2"><span class="linenos" data-linenos="2 "></span></a>git<span class="w"> </span>checkout<span class="w"> </span>main
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><a href="#__codelineno-9-3"><span class="linenos" data-linenos="3 "></span></a>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><a href="#__codelineno-9-4"><span class="linenos" data-linenos="4 "></span></a><span class="c1"># 2. 拉取最新代码（包含了你刚刚合并的PR）</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><a href="#__codelineno-9-5"><span class="linenos" data-linenos="5 "></span></a>git<span class="w"> </span>pull<span class="w"> </span>upstream<span class="w"> </span>main
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><a href="#__codelineno-9-6"><span class="linenos" data-linenos="6 "></span></a>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><a href="#__codelineno-9-7"><span class="linenos" data-linenos="7 "></span></a><span class="c1"># 3. 删除已经合并的本地分支</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a><a href="#__codelineno-9-8"><span class="linenos" data-linenos="8 "></span></a>git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>feature/my-new-feature
-</span></code></pre></div></p>
-<div class="admonition quote">
-<p class="admonition-title">关于 <code>-d</code> 和 <code>-D</code></p>
-<p><code>-d</code> 选项是安全的，只有在分支被完全合并后才能删除。如果想强制删除一个未合并的分支，使用 <code>-D</code>。</p>
-</div>
-</li>
+<li><strong><mark>注意，你的修改必须要在你的 fork 进行，而不是在官方的 master 仓库上</mark></strong></li>
 </ol>
-</details>
-<p>至此，一个完整的 Pull Request 工作流程结束。<img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:" /></p>
+<p>创建新分支：</p>
+<div class="language-Bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><a href="#__codelineno-10-1"><span class="linenos" data-linenos="1 "></span></a><span class="w">    </span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>fix/update-contact-page
+</span></code></pre></div>
+<p>在新分支上面的编码，修改，添加文件，在 <code>add</code> <code>commit</code> 后执行：</p>
+<div class="language-Bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><a href="#__codelineno-11-1"><span class="linenos" data-linenos="1 "></span></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>fix/update-contact-page
+</span></code></pre></div>
+<p>最后去你的 Github Fork 上点击 Pull Request</p>
+</div>
 
 
 
