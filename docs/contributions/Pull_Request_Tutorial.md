@@ -180,4 +180,26 @@ title: Pull Request Tutorial
         !!! quote "关于 `-d` 和 `-D`"
             `-d` 选项是安全的，只有在分支被完全合并后才能删除。如果想强制删除一个未合并的分支，使用 `-D`。
 
+    !!! tip "更新通知"
+        当你的 PR 被 merge 之后，若想继续 contribute ，请优先参考下文的办法
+
 至此，一个完整的 Pull Request 工作流程结束。:rocket:
+
+---
+
+!!! tip "Addition: 不删除本地Fork，继续发PR的方法"
+    可以用 `Github` 上的 `sync Fork`
+    1. 去 `Github` 上你的 `fork` 页面，看到右边有个 `sync Fork` 按钮，点击 `Update Branch` 完成更新
+    ![Fork Sync](../assets/images/Fork-sync.png)
+    2. 在本地执行以下三条命令：
+    ```Bash
+    git checkout master #查询主仓库更新
+    git pull upstream master  #从上游官方仓库拉取更新
+    git push origin master  #将更新后的本地主分支推送到你的origin（你的Fork）
+    ```
+    看到 `Everything up-to-date` 就表明你的分支仓库和官方进度同步了
+
+    **==提醒：一定要确保你的本地Fork和官方进度同步再发起更新，不然版本冲突很麻烦==**
+
+
+
