@@ -109,6 +109,10 @@ title: Pull Request Tutorial
         !!! example "成功提交PR后的页面示例"
             ![PR 成功页面](../assets/images/PR-Success.png)
 
+        这时候只要等待主管 merge 你的 PR 即可
+
+
+至此，一个完整的 Pull Request 工作流程结束。:rocket:
 
 ---
 
@@ -159,31 +163,9 @@ title: Pull Request Tutorial
         git push --force-with-lease origin feature/my-new-feature
         ```
 
-???+ success "Last Phase: PR 合并后的清理工作"
-    PR 被合并后，为了保持仓库整洁，应该删除已完成使命的分支。
 
-    1.  **删除远程分支**
-        在 GitHub 上合并 PR 后，通常会有一个 "Delete branch" 的按钮，点击即可。
 
-    2.  **删除本地分支**
-        ```bash title="清理本地分支"
-        # 1. 切换回主分支
-        git checkout main
 
-        # 2. 拉取最新代码（包含了你刚刚合并的PR）
-        git pull upstream main
-
-        # 3. 删除已经合并的本地分支
-        git branch -d feature/my-new-feature
-        ```
-
-        !!! quote "关于 `-d` 和 `-D`"
-            `-d` 选项是安全的，只有在分支被完全合并后才能删除。如果想强制删除一个未合并的分支，使用 `-D`。
-
-    !!! tip "更新通知"
-        当你的 PR 被 merge 之后，若想继续 contribute ，请优先参考下文的办法
-
-至此，一个完整的 Pull Request 工作流程结束。:rocket:
 
 ---
 
@@ -200,6 +182,23 @@ title: Pull Request Tutorial
     看到 `Everything up-to-date` 就表明你的分支仓库和官方进度同步了
 
     **==提醒：一定要确保你的本地Fork和官方进度同步再发起更新，不然版本冲突很麻烦==**
+
+    3. **==注意，你的修改必须要在你的 fork 进行，而不是在官方的 master 仓库上==**
+
+    创建新分支：
+
+    ```Bash
+        git checkout -b fix/update-contact-page
+    ```
+
+    在新分支上面的编码，修改，添加文件，在 `add` `commit` 后执行：
+
+    ```Bash
+    git push -u origin fix/update-contact-page
+    ```
+
+    最后去你的 Github Fork 上点击 Pull Request
+
 
 
 
