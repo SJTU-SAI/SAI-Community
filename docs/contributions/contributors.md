@@ -1,4 +1,4 @@
-Welcome, contributors—your ideas and efforts make this project thrive! 🌟
+Welcome, contributors — your ideas and efforts make this project thrive! 🌟
 
 ## Contributors
 
