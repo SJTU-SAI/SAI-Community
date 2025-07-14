@@ -97,13 +97,13 @@ In real cases, things get worse!
 
 ### Advanced Package Manager
 
-依赖地狱是一个NP难问题 (SAT)，因此依赖开发者的手动构建和调试是不可能的。因此，**高级软件管理包**的概念被提出，他就像一个管理者，专门负责管理不同依赖项之间的冲突和版本控制问题。
+依赖地狱是一个NP难问题 (SAT)，依赖开发者的手动构建和调试是不可能的。此外，一些基本编程语言的非兼容性变更是毁灭性的，例如Python主版本号从2到3的转变[^2]，许多上层应用都要跟着修改接口和代码。因此，**高级软件管理包**的概念被提出，他就像一个管理者，专门负责管理不同依赖项之间的冲突和版本控制问题。
 
 ??? info "Advanced Package Manager"
 
-    常见的包管理工具：
+    包管理工具不仅局限于Python开发，现代软件工程中地狱依赖的现象随处可见，常见的包管理工具有：
 
-    - `apt` for `Debian` & `Ubuntu`.
+    - `apt` for Debian & Ubuntu.
 
     - `npm` for Nodejs.
 
@@ -118,7 +118,11 @@ In real cases, things get worse!
 
 ### `pip`
 
-`pip` 是 Python 官方推荐的包管理工具，用于安装和管理 Python 包。它可以从 [PyPI (Python Package Index)](https://pypi.org/) 下载并安装第三方库。
+`pip`[^3] 是 Python 官方推荐的包管理工具，用于安装和管理 Python 包。它可以从 [PyPI (Python Package Index)](https://pypi.org/) 下载并安装第三方库。
+
+> pip is the package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.
+
+> 具体的安装过程详见：[https://pypi.org/project/pip/](https://pypi.org/project/pip/)
 
 
 ```bash
@@ -144,9 +148,29 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
-> 你甚至可以使用pip安装自己写的库！需要使用`pip install .`并且配置好`pyproject.toml`的配置文件。
+> 你甚至可以使用pip安装自己本地的库并且使用！需要使用`pip install .`并且配置好`pyproject.toml`的配置文件。
+
+有了pip，你就可以自由安装除标准库之外第三方开发者写好的库并且在你的代码中使用。
+
+![Pypi](../assets/images/py/pypi.png)
 
 ### 基于项目的虚拟环境构建工具
+
+在跑别人的项目时，可以使用`pip install -r requirements.txt`来安装别人的项目依赖，而不需要自己手动调整并且安装。但是这会带来新的隐患。
+
+??? "A demo"
+
+    例如下面的例子（Python 3.9），我在本地的numpy环境是`2.0.2`，而matplotlib的版本是`3.9.4`，相安无事。
+
+    但是如果我在安装他人代码项目依赖的时候，降级安装了`numpy==1.22`的版本（这在许多比较老的项目版本中比较常见），就会出现如下报错：
+
+    ```text
+    ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+    matplotlib 3.9.4 requires numpy>=1.23, but you have numpy 1.22.0 which is incompatible.
+    ```
+    后续又会产生一系列兼容性的问题。
+
+对于上述版本冲突问题，往往采用**虚拟环境**解决，即将冲突的相关依赖分别放置在两个虚拟环境中，井水不犯河水。
 
 #### `venv`
 
@@ -232,3 +256,7 @@ conda remove -n env_name --all
 ## References
 
 [^1]: [Packages in Python](https://docs.python.org/3/tutorial/modules.html#packages)
+
+[^2]: [From Python2 to Python3](https://www.ibm.com/docs/en/cloud-pak-sec-aas?topic=scripts-python-2-python-3-differences)
+
+[^3]: [Pip official docs](https://pypi.org/project/pip/)
