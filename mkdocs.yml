@@ -99,6 +99,12 @@ markdown_extensions:
 nav:
   - Hello World: "index.md"
   - About: "about.md"
+  # - Roadmaps:
+    # - Welcome: "roadmaps/welcome-to-ai.md"
+    # - Self Learning: "roadmaps/cs-self-learning.md"
+  - Tools:
+    # - 命令行入门: "tools/cli.md"
+    - Python 项目管理: "tools/python-package-managing.md"
   - Courses:
     - Semester 1.1:
       - 人工智能导论: "courses/Semester1.1/SJTU-AI1801.md"
