@@ -99,13 +99,15 @@ markdown_extensions:
 nav:
   - Hello World: "index.md"
   - About: "about.md"
-  # - Roadmaps:
-    # - Welcome: "roadmaps/welcome-to-ai.md"
+  - Roadmaps:
+    - README: "roadmaps/init.md"
+    - Website: "roadmaps/website-recommend.md"
     # - Self Learning: "roadmaps/cs-self-learning.md"
   - Tools:
     # - 命令行入门: "tools/cli.md"
     - Python 项目管理: "tools/python-package-managing.md"
   - Courses:
+    - README: "courses/init.md"
     - Semester 1.1:
       - 人工智能导论: "courses/Semester1.1/SJTU-AI1801.md"
       - 线性代数: "courses/Semester1.1/SJTU-MATH1205H.md"
@@ -114,7 +116,6 @@ nav:
     - Semester 1.2:
       - 数学分析II: "courses/Semester1.2/SJTU-MATH1608H.md"
       - 大学物理I: "courses/Semester1.2/SJTU-PHY1251H.md"
-      - 基础物理实验I: "courses/Semester1.2/SJTU-PHY1223H.md"
       - 数据结构: "courses/Semester1.2/SJTU-CS0501H.md"
       - 离散数学: "courses/Semester1.2/SJTU-CS2501H.md"
       - 编程综合实践: "courses/Semester1.2/SJTU-AI1803.md"
