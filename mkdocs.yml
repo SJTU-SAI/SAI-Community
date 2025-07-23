@@ -102,9 +102,8 @@ nav:
   - Roadmaps:
     - README: "roadmaps/init.md"
     - Website: "roadmaps/website-recommend.md"
-    # - Self Learning: "roadmaps/cs-self-learning.md"
   - Tools:
-    # - 命令行入门: "tools/cli.md"
+    - 命令行入门: "tools/cli.md"
     - Python 项目管理: "tools/python-package-managing.md"
   - Courses:
     - README: "courses/init.md"
