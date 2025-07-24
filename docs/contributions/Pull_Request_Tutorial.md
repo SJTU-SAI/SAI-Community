@@ -37,7 +37,7 @@ title: Pull Request Tutorial
 
         [前往 SAI-Community 仓库 Fork](https://github.com/SJTU-SAI/SAI-Community){ .md-button }
 
-        ![Fork 按钮位置](../assets/images/fork-button.png)
+        ![Fork 按钮位置](../assets/images/pr/fork-button.png)
 
     2.  **Clone 你的 Fork 仓库到本地**
         ```bash title="Clone 你的 Fork"
@@ -107,7 +107,7 @@ title: Pull Request Tutorial
         推送成功后，在浏览器中打开你的 Fork 仓库主页。通常会有一个黄色的提示条和一个绿色的 **"Compare & pull request"** 按钮。点击它，填写清晰的 PR 标题和描述，然后提交。接下来就是等待仓库管理者审查和合并。
 
         !!! example "成功提交PR后的页面示例"
-            ![PR 成功页面](../assets/images/PR-Success.png)
+            ![PR 成功页面](../assets/images/pr/PR-Success.png)
 
         这时候只要等待主管 merge 你的 PR 即可
 
@@ -172,7 +172,7 @@ title: Pull Request Tutorial
 !!! tip "Addition: 不删除本地Fork，继续发PR的方法"
     可以用 `Github` 上的 `sync Fork`
     1. 去 `Github` 上你的 `fork` 页面，看到右边有个 `sync Fork` 按钮，点击 `Update Branch` 完成更新
-    ![Fork Sync](../assets/images/Fork-sync.png)
+    ![Fork Sync](../assets/images/pr/Fork-sync.png)
     2. 在本地执行以下三条命令：
     ```Bash
     git checkout master #查询主仓库更新
