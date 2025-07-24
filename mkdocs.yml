@@ -11,10 +11,9 @@ theme:
   custom_dir: overrides
   name: material
   language: zh
-  # !todo logo: tobe done
+  favicon: assets/sai.jpg
   static_templates:
     - 404.html
-  # !todo favicon: tobe done
   include_search_page: true
   palette:
     scheme: sai
@@ -56,7 +55,6 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
-  # - stylesheets/colors.scss
 
 extra_javascript:
   - javascripts/mathjax.js
